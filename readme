@@ -1,0 +1,38 @@
+# Fake Review Detector (ML + Tableau)
+
+## 📌 Project Overview
+This project detects and analyzes fake product reviews using **Python (NLP + ML)** and visualizes insights with **Tableau**.  
+It combines automated fraud detection with interactive dashboards for decision-making.
+
+## 🛠️ Tech Stack
+- Python (NLTK, scikit-learn, pandas, matplotlib, seaborn, Streamlit)
+- Tableau Public (Dashboard & KPIs)
+- Dataset: Amazon Reviews (2019 sample)
+
+## ⚙️ Methodology
+1. **Data Preprocessing:** Cleaning, text processing, feature engineering.
+2. **Machine Learning:** Random Forest Classifier trained to detect fake reviews.
+3. **NLP Analysis:** Sentiment, word frequency, and linguistic anomalies.
+4. **Visualization:** Tableau dashboard showing KPIs, rating distributions, and suspicious patterns.
+
+## 📊 Dashboard Preview
+![Dashboard](images/dashboard_preview.png)
+
+KPIs included:
+- Total Reviews
+- % Verified Reviews
+- Avg Rating
+- % Extreme Ratings
+
+Charts included:
+- Ratings Distribution
+- Verified vs Non-Verified
+- Reviews Over Time
+- Helpfulness vs Rating
+
+## 🚀 How to Run
+### Python App
+```bash
+cd python
+pip install -r requirements.txt
+streamlit run app.py
